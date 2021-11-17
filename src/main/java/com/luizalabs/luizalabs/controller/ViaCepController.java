@@ -41,7 +41,7 @@ public class ViaCepController {
 
             return ResponseEntity.ok(cepModel);
         } else {
-            throw new ResourceNotFound("CEP inválido", HttpStatus.NOT_FOUND);
+            throw new ResourceNotFound("CEP inválido", HttpStatus.BAD_REQUEST);
         }
     }
 }
