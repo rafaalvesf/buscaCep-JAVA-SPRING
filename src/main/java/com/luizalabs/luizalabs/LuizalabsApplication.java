@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
+//Com a anotação @EnableFeignClients, fica possível buscar pela interface client, que deve ser consumida
 @EnableFeignClients
 public class LuizalabsApplication {
 

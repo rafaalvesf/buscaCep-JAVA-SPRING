@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.Entity;
 
+// classe model, onde é definida as informações que serão retornadas ao consultar o serviço de buscaCEP
 @Getter
 @Setter
 @AllArgsConstructor
