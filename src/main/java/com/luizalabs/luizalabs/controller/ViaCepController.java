@@ -39,7 +39,7 @@ public class ViaCepController {
                 cepModel = viaCepService.buscaEndereco(cepCorrigido);
             }
             if (cepModel.getLocalidade() == null || cepModel.getUf() == null){
-                throw new ResourceNotFound("CEP inexistente", HttpStatus.NOT_FOUND);
+                throw new ResourceNotFound("CEP inválido", HttpStatus.NOT_FOUND);
             }
 
             return ResponseEntity.ok(cepModel);
