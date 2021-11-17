@@ -31,3 +31,6 @@ e será obtido o seguinte retorno em JSON:
 }
 
 ```
+
+### Autor
+Rafael Alves
