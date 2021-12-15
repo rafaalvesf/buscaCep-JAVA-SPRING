@@ -20,7 +20,7 @@ public class ViaCepController {
     //Na classe controller, recebemos o parâmetro CEP, validamos o mesmo, solicitamos o
     // consumo da api a classe de serviço e retornamos os dados de acordo com as variáveis
     // definidas na classe model.
-    @GetMapping("/{cep}")
+    @GetMapping("/api/v1/{cep}")
     public ResponseEntity<CepModel> getCep(@PathVariable String cep) throws ResourceNotFound {
 
         if (cep.length() == 8) {
